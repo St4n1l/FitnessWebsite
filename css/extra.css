@@ -1,0 +1,35 @@
+body {
+    background-color: #333;
+    background-image: url("../images/strength-in-motion-stockcake.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    margin: 0; /* Remove default body margin */
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+    overflow: hidden;
+}
+
+.tutorial-video
+{
+    position: relative;
+    width: 100%; /* Adjust this to control the width */
+    max-width: 760px; /* Maximum width (optional) */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 6%;
+}
+
+.tutorial-video::before
+{
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+}
+
+iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
