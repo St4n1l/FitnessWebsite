@@ -35,15 +35,6 @@ header {
   nav ul li a:hover {
     color: #ff6347;
   }
-
-  :root {
-    --card-bg: #f4f4f4;
-    --card-border: #ddd;
-    --card-hover-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    --card-hover-transform: translateY(-10px);
-    --text-color: #333;
-    --link-color: #007bff;
-  }
   
   .workout-grid {
     display: grid;
