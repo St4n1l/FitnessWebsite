@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+    <header>  
+        <nav>
+            <ul>
+                <li><a href="main.html">Назад</a></li>
+            </ul>
+        </nav>
+        </header>
+    <main>
+        <form id="calculator">
+            <div>
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+            <div>
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" name="height" required>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <label for="activity-level">Activity Level</label>
+            <select id="activity-level" name="activity-level" required>
+                <option value="1.2">Sedentary (little or no exercise)</option>
+                <option value="1.375">Lightly active (light exercise/sports 1-3 days/week)</option>
+                <option value="1.55">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                <option value="1.725">Very active (hard exercise/sports 6-7 days a week)</option>
+                <option value="1.9">Extra active (very hard exercise/sports & physical job)</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Calculate</button>
+        </div>
+        <div class="outputs">
+            <label for="BMI">BMI:</label>
+            <output id="BMI"></output>
+            <label for="Maintanence">Maintanence calories:</label>
+            <output id="Maintanence"></output>
+        </div>
+    </main>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
