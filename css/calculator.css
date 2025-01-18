@@ -1,40 +1,46 @@
 body {
     background-color: #333;
-    background-image: url("../images/strength-in-motion-stockcake.jpeg");
+    background-image: url("../images/background.jpeg");
     background-repeat: no-repeat;
-    background-size: cover; /* Ensures the image covers the entire viewport */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
     min-height: 100vh;
-    
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  /* Ensure content doesn't overflow and cause scrollbars */
-  html, body {
+}
+
+html, body {
     overflow-x: hidden;
-  }
+}
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+}
 
- nav ul li a {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-  }
-  
-  nav ul li a:hover {
-    color: #ff6347;
-  }
+    font-size: 1.8em;
+}
 
-#calculator
-{
-    background-color: rgba(51,51,51,0.9);
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+#calculator {
+    background-color: rgba(51, 51, 51, 0.9);
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -44,25 +50,25 @@ body {
 }
 
 #calculator div {
-    
-    margin-bottom: 15px; /* Add spacing between form fields */
+    margin-bottom: 15px;
 }
 
-#calculator label {
-    display: block; /* Make labels block-level for better alignment */
-    margin-bottom: 5px; /* Add spacing between label and input */
+#calculator label 
+{
+    display: block;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
 #calculator input,
 #calculator select {
-    width: 100%; /* Make inputs and select fields take up full width */
+    width: 100%;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #444;
     color: white;
-    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    box-sizing: border-box;
 }
 
 #calculator button {
@@ -74,19 +80,19 @@ body {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 10px; /* Add spacing above the button */
+    margin-top: 10px;
 }
 
 #calculator button:hover {
     background-color: #2980B9;
 }
 
-.outputs{
-    display:flex;
-    flex-direction: column; /* or row, depending on your layout */
-    gap: 10px; /* Adjust the gap between items */
+.outputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .outputs label {
-    margin-right: 2px; /* Adjust the space between the label and the output */
+    margin-right: 2px;
 }

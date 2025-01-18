@@ -1,70 +1,68 @@
 body {
   background-color: #333;
-  background-image: url("../images/strength-in-motion-stockcake.jpeg");
+  background-image: url("../images/background.jpeg");
   background-repeat: no-repeat;
-  background-size: cover; /* Ensures the image covers the entire viewport */
-  background-position: center; /* Centers the image */
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
   min-height: 100vh;
 }
 
-/* Ensure content doesn't overflow and cause scrollbars */
 html, body {
   overflow-x: hidden;
 }
 
-header {
+header 
+{
     padding: 10px 20px;
-  }
+}
   
   nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 20px;
   }
   
-  nav ul li a {
+  nav ul li a 
+  {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.8em;
   }
   
-  nav ul li a:hover {
+  nav ul li a:hover 
+  {
     color: #ff6347;
   }
   
-  .workout-grid {
+  .workout-grid 
+  {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2%;
     padding: 5%;
-    margin: 5% 5% 0;
+    margin: 7% 5% 0;
   }
   
   .workout-card {
-    background-color: #ffffff;
-    border: 1px solid white;
-    border-radius: 8px;
+    background-color: #3D5861;
+    border: 1px solid #ffffff;
+    border-radius: 3%;
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
     margin-bottom: 10%;
     
   }
   
   .workout-card a {
     text-decoration: none;
-    color: #333;
-    display: block;
-    height: 100%;
   }
   
   .workout-card img {
     width: 100%;
-    height: 150px;
+    height: 80%;
     object-fit: cover;
     display: block;
   }
@@ -73,10 +71,9 @@ header {
     font-size: 1.25rem;
     font-weight: bold;
     margin: 10px 0;
-    color: #3D5861;
+    color: #ffffff;
   }
   
   .workout-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
