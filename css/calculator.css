@@ -53,7 +53,7 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-#calculator label 
+.calculatorform label 
 {
     display: block;
     margin-bottom: 10px;
@@ -93,6 +93,6 @@ nav ul li a:hover {
     gap: 10px;
 }
 
-.outputs label {
-    margin-right: 2px;
+.outputs label{
+    margin-bottom: -5px;
 }
